@@ -13,9 +13,11 @@ export HOMEBREW_NO_ANALYTICS=1
 ZSH_DISABLE_COMPFIX=true
 
 # Actually load Oh-My-Zsh
-source "${ZSH}/oh-my-zsh.sh"
-unalias rm # No interactive rm by default (brought by plugins/common-aliases)
-unalias lt # we need `lt` for https://github.com/localtunnel/localtunnel
+#source "${ZSH}/oh-my-zsh.sh"
+source /home/z/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source /home/z/.oh-my-zsh/custom/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
+#unalias rm # No interactive rm by default (brought by plugins/common-aliases)
+#unalias lt # we need `lt` for https://github.com/localtunnel/localtunnel
 
 # Load rbenv if installed (to manage your Ruby versions)
 export PATH="${HOME}/.rbenv/bin:${PATH}" # Needed for Linux/WSL

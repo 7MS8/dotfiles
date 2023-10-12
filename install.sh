@@ -1,4 +1,4 @@
-#!/bin/zsh
+#!/usr/bin/zsh
 
 # Define a function which rename a `target` file to `target.backup` if the file
 # exists and if it's a 'real' file, ie not a symlink
@@ -48,10 +48,10 @@ if [[ `uname` =~ "Darwin" ]]; then
   CODE_PATH=~/Library/Application\ Support/Code/User
 # Else, it's a Linux
 else
-  CODE_PATH=~/.config/Code/User
+  CODE_PATH=~/.config/VSCodium/User
   # If this folder doesn't exist, it's a WSL
   if [ ! -e $CODE_PATH ]; then
-    CODE_PATH=~/.vscode-server/data/Machine
+    CODE_PATH=~/.vscode-oss/data/Machine
   fi
 fi
 
